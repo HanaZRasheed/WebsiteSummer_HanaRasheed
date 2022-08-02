@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        span.a {
+            display: inline;
+            /* the default for span */
+            /* the width and height properties have no effect on inline items*/
+            padding: 5px;
+            border: 1px solid blue;
+            background-color: blue;
+        }
+        
+        span.b {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid orangered;
+            background-color: orangered;
+        }
+        
+        span.c {
+            display: block;
+            width: 200px;
+            height: 200px;
+            padding: 5px;
+            border: 1px solid lightseagreen;
+            background-color: lightseagreen;
+        }
+    </style>
+</head>
+
+
+<h1>The display Property</h1>
+
+<h2>display: inline</h2>
+
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="a">Aliquam</span> <span class="a">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum
+    velit sed laoreet. </div>
+
+<h2>display: inline-block</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="b">Aliquam</span> <span class="b">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum
+    velit sed laoreet. </div>
+
+<h2>display: block</h2>
+<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="c">Aliquam</span> <span class="c">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum
+    velit sed laoreet. </div>
+
+<body>
+
+</body>
+
+</html>
