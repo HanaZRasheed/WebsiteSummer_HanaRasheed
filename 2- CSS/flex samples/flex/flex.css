@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.container {
+    margin: 20px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-1 {
+    background-color: darkseagreen;
+    position: relative;
+    flex: 1;
+    max-width: 300px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-2 {
+    background-color: cornflowerblue;
+    position: relative;
+    flex: 1;
+    max-width: 460px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-3 {
+    background-color: darksalmon;
+    position: relative;
+    flex: 1;
+    max-width: 940px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width:800px) {
+    .card-1 {
+        flex: 100%;
+        max-width: 600px;
+    }
+    .card-2 {
+        flex: 100%;
+        max-width: 600px;
+    }
+    .card-3 {
+        flex: 100%;
+        max-width: 600px;
+    }
+}

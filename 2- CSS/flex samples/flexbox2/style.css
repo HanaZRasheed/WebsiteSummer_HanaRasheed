@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: aquamarine;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    height: 100px;
+    flex: 1 0 1500px;
+    background-color: cadetblue;
+}
+
+section {
+    height: 450px;
+    flex: 1 0 250px;
+    background-color: blanchedalmond;
+    margin: 5px;
+}
+
+aside {
+    height: 450px;
+    flex: 1 0 250px;
+    margin: 5px;
+    background-color: blue;
+}
+
+footer {
+    height: 100px;
+    flex: 1 0 1500px;
+    background-color: yellowgreen;
+}

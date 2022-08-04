@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+header {
+    height: 100px;
+    flex: 1 0 1400px;
+    background-color: salmon;
+}
+
+section {
+    height: 450px;
+    flex: 1 0 250px;
+    margin: 5px;
+    background-color: darkgray;
+}
+
+aside {
+    height: 450px;
+    flex: 1 0 250px;
+    margin: 5px;
+    background-color: wheat;
+}
+
+footer {
+    height: 100px;
+    /*flex-grow flex-shrink flex-basis */
+    flex: 1 0 1500px;
+    background-color: darkcyan;
+}

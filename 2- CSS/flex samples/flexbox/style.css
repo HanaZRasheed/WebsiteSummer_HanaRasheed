@@ -1,0 +1,36 @@
+.container {
+    height: 600px;
+    display: flex;
+    /* flex-direction row or column */
+    flex-direction: row-reverse;
+    /* row - vertically */
+    /* column - horizontally */
+    /* stretch is the default value*/
+    align-items: center;
+    /* row- horizontally*/
+    /* column - vertically */
+    justify-content: center;
+    background-color: darkblue;
+    flex-wrap: nowrap;
+}
+
+.flex-item {
+    width: 200px;
+    background-color: grey;
+    border: 5px solid red;
+    margin: 5px;
+}
+
+.item-1 {
+    min-height: 100px;
+    align-self: flex-end;
+}
+
+.item-2 {
+    min-height: 200px;
+    align-self: flex-start;
+}
+
+.item-3 {
+    min-height: 300px;
+}
