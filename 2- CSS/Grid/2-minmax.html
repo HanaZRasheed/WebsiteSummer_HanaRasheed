@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            background-color: #f4f1de;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /*see the empact of grid-auto-rows: 100px and compare it with minmax value*/
+            /* grid-auto-rows: 100px; */
+            grid-auto-rows: minmax(100px, auto);
+            height: 100vh;
+            row-gap: 2px;
+            column-gap: 2px;
+        }
+        
+        .item {
+            background-color: #bbb;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum tempore expedita voluptatem praesentium officiis impedit quas dolore architecto! Quo voluptate odio velit, dolore atque doloribus voluptatum sint? Quo soluta nobis repellendus labore
+            minima, recusandae, repudiandae quia quis distinctio veritatis error fuga quasi harum expedita doloremque molestias esse et nam dolore!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, eos cupiditate consectetur tempore reiciendis, labore repellat dolor quidem sint, aliquam facere quisquam est quae itaque atque voluptas! Quia, laborum modi praesentium saepe distinctio
+            sunt, voluptatum illo autem amet dignissimos similique, optio architecto? Cupiditate animi minus quas autem in delectus ipsum assumenda sed magni et quam, fuga beatae soluta a praesentium vel itaque, at incidunt possimus ea consequatur sapiente
+            laboriosam eveniet! Suscipit architecto quam officiis cum amet, delectus labore odio consectetur numquam accusamus hic culpa itaque consequatur! Dolorum voluptatem dicta tenetur cupiditate omnis ab explicabo inventore perspiciatis sapiente!
+            Perspiciatis, quae totam.</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7 </div>
+        <div class="item">item 8</div>
+        <div class="item">item 9</div>
+        <div class="item">item 10</div>
+    </div>
+
+</body>
+
+</html>
