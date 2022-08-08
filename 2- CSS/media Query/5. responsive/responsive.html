@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Custom Styles */
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 1em;
+        }
+        
+        h1 {
+            font-weight: bold;
+            font-size: 2em;
+            margin: 0.5em 0;
+        }
+        
+        div {
+            text-align: center;
+        }
+        
+        div.responsive img {
+            width: 100%;
+        }
+        
+        .responsive {
+            display: inline-block;
+            border: 1px solid #ccc;
+            margin: 0.5em;
+            padding: 0.5em;
+            width: 100%;
+        }
+        
+        @media (min-width: 480px) {
+            .responsive {
+                width: 42%;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .responsive {
+                width: 22%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Image Gallery</h1>
+    <div id='container'>
+        <div class='responsive'>
+            <a href='#'>
+                <img src='1.jpg'>
+            </a>
+            <div>Add a description here</div>
+        </div>
+        <div class='responsive'>
+            <a href='#'>
+                <img src='2.jpg'>
+            </a>
+            <div>Add a description here</div>
+        </div>
+        <div class='responsive'>
+            <a href='#'>
+                <img src='3.jpg'>
+            </a>
+            <div>Add a description here</div>
+        </div>
+        <div class='responsive'>
+            <a href='#'>
+                <img src='4.jpg'>
+            </a>
+            <div>Add a description here</div>
+        </div>
+    </div>
+</body>
+
+</html>

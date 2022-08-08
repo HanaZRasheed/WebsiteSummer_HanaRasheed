@@ -1,0 +1,83 @@
+html {
+    background-image: url("assets/wallpaper2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: minmax(400px, auto);
+    gap: 30px;
+    font-size: 30px;
+    padding: auto;
+    margin: 20px auto;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.card>article {
+    background-color: whitesmoke;
+    min-width: 250px;
+    border-radius: 5px;
+    padding-bottom: 20px;
+}
+
+.card>article:hover {
+    transform: translateY(3px);
+    box-shadow: 2px 5px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.info {
+    font-family: sans-serif;
+}
+
+.info>h3 {
+    text-transform: capitalize;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.info>p {
+    font-size: 16px;
+}
+
+.info>.button {
+    text-decoration: none;
+    background-color: rgb(107 189 118);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width:600px) {
+    .card {
+        grid-template-columns: repeat(2, 1fr);
+        font-size: large;
+    }
+}
+
+@media (min-width:800px) {
+    .card {
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: minmax(400px, auto);
+        padding: 10px;
+    }
+    .info>.button {
+        font-size: 1.5vw;
+    }
+}

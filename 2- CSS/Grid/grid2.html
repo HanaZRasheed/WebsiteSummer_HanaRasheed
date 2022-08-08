@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Display Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            background-color: cadetblue;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            /* grid-template-rows: 200px 100px;*/
+            /* grid-auto-rows: minmax(200px, auto); */
+            /* grid-column-gap: 10px;
+            grid-row-gap: 5px; */
+            /* grid-gap: 5px; */
+            height: 100vh;
+        }
+        
+        .grid-item {
+            border: 3px solid red;
+            font-size: 2em;
+            text-align: center;
+        }
+        
+        .item1 {
+            /* grid-column-start: 1;
+            grid-column-end: 4; */
+            /* grid-column: 1/4; */
+            grid-column: span 3;
+        }
+        
+        .item2 {
+            /* grid-row-start: 2;
+            grid-row-end: 4; */
+            grid-row: 2/4;
+        }
+        
+        .item3 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        
+        .item9 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="grid-item item1">item 1</div>
+        <div class="grid-item item2"> item 2</div>
+        <div class="grid-item item3">item 3 </div>
+        <div class="grid-item item4">item 4</div>
+        <div class="grid-item item5">item 5</div>
+        <div class="grid-item item6">item 6</div>
+        <div class="grid-item item7">item 7</div>
+        <div class="grid-item item8">item 8</div>
+        <div class="grid-item item9">item 9</div>
+    </div>
+
+</body>
+
+</html>

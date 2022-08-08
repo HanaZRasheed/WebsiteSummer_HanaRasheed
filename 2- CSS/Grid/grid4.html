@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Display Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            background-color: cadetblue;
+            display: grid;
+            grid-template-columns: repeat(3, 400px);
+            /* vertically*/
+            justify-content: center;
+            /*start, end,space-around, stretch, space-betwwen*/
+            /*horizontaly*/
+            align-content: start;
+            grid-gap: 20px;
+            height: 100vh;
+        }
+        
+        .grid-item {
+            border: 3px solid red;
+            font-size: 2em;
+            text-align: center;
+        }
+        
+        .item1 {}
+        
+        .item2 {}
+        
+        .item3 {}
+        
+        .item9 {}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="grid-item item1">item 1</div>
+        <div class="grid-item item2"> item 2</div>
+        <div class="grid-item item3">item 3 </div>
+        <div class="grid-item item4">item 4</div>
+        <div class="grid-item item5">item 5</div>
+        <div class="grid-item item6">item 6</div>
+        <div class="grid-item item7">item 7</div>
+        <div class="grid-item item8">item 8</div>
+        <div class="grid-item item9">item 9</div>
+    </div>
+
+</body>
+
+</html>
