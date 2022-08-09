@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<style>
+    #success {
+        color: green;
+    }
+    
+    #failure {
+        color: red;
+    }
+</style>
+
+<body>
+    Start Date
+    <input type="date" id="startDate"> End Date
+    <input type="date" id="endDate">
+
+    <p id="success"></p>
+    <p id="failure"></p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("startDate").value;
+            var y = document.getElementById("endDate").value;
+            if (Date.parse(y) >= Date.parse(x)) {
+                document.getElementById("success").innerHTML = "start date is less than end date";
+                document.getElementById("failure").innerHTML = "";
+            } else {
+                document.getElementById("success").innerHTML = "";
+                document.getElementById("failure").innerHTML = "start date must be less than end date";
+            }
+        }
+    </script>
+</body>
+
+</html>

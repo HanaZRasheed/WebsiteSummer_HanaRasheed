@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script>
+        function sum() {
+            var x = parseInt(document.getElementById("number1").value);
+            var y = parseInt(document.getElementById("number2").value);
+            document.getElementById("result").value = x + y;
+        }
+
+        function subtract() {
+            var x = parseInt(document.getElementById("number1").value);
+            var y = parseInt(document.getElementById("number2").value);
+            document.getElementById("result").value = x - y;
+        }
+
+        function multiply() {
+            var x = parseInt(document.getElementById("number1").value);
+            var y = parseInt(document.getElementById("number2").value);
+            document.getElementById("result").value = x * y;
+        }
+
+        function divide() {
+            var x = parseInt(document.getElementById("number1").value);
+            var y = parseInt(document.getElementById("number2").value);
+            document.getElementById("result").value = x / y;
+        }
+    </script>
+</head>
+
+<body>
+    <h1> Simple Math </h1>
+    <br>
+    <label> number 1 </label> &nbsp
+    <input type="text" id="number1">
+    <br>
+    <br>
+    <label> number 2 </label> &nbsp
+    <input type="text" id="number2">
+    <br>
+    <br>
+    <label> Result </label> &nbsp &nbsp &nbsp
+    <input type="text" id="result">
+    <br>
+    <br>
+    <input type="button" value="Sum" onClick="sum()">
+    <input type="button" value="Subtract" onClick="subtract()">
+    <input type="button" value="multiply" onClick="multiply()">
+    <input type="button" value="divide" onClick="divide()">
+
+</html>

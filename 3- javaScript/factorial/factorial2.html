@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function findFactorial() {
+            var fact = 1;
+            var x = document.querySelector("#factorialInput").value;
+            for (var i = x; x > 1; x--) {
+                fact *= x;
+            }
+            document.querySelector("#factorialResult").value = fact;
+
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1> Factorial </h1>
+    <label> input </label>
+    <input type="number" id="factorialInput">
+    <label> output </label>
+    <input type="number" id="factorialResult">
+    <input type="button" onClick="findFactorial()" value="Find Factorail">
+
+</body>
+
+</html>

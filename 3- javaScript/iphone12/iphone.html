@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var list = document.querySelectorAll('img');
+            list.forEach(function(item) {
+                item.addEventListener('click', function() {
+                    document.querySelector('#bigimg').src = item.src;
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1> Iphone 12</h1>
+
+    <div id="blue-div">
+
+        <img src="blue1.jpg" width='100'>
+        <img src="blue2.jpg" width='100'>
+        <img src="blue3.png" width='100'>
+        <br>
+        <img src="blue1.jpg" width='300' id='bigimg'>
+    </div>
+
+
+</body>
+
+</html>

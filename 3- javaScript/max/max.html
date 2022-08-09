@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function findMax() {
+        var x = parseInt(document.getElementById("num1").value);
+        var y = parseInt(document.getElementById("num2").value);
+        var z = parseInt(document.getElementById("num3").value);
+        var max;
+        if (y > x && y > z) {
+            max = y;
+        } else
+        if (x > y && x > z) {
+            max = x
+        } else max = z;
+
+        document.getElementById("MaxValue").value = max;
+
+    }
+</script>
+
+<body>
+
+    <h2> Find Max </h2>
+    <label> number 1 </label> <input type="number" id="num1">
+    <label> number 2 </label> <input type="number" id="num2">
+    <label> number 3 </label> <input type="number" id="num3">
+    <input type="number" id="MaxValue">
+    <input type="button" value="Find Max" onClick="findMax()">
+
+</body>
+
+</html>

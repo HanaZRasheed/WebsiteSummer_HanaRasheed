@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input type="button" id="btn01" value="OK">
+    </form>
+
+    <p>Click the "Disable" button to disable the "OK" button:</p>
+
+    <button onclick="disableElement()">Disable</button>
+
+    <script>
+        function disableElement() {
+            document.getElementById("btn01").disabled = true;
+        }
+    </script>
+
+</body>
+
+</html>

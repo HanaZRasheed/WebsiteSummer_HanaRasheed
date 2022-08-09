@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function display() {
+            var radios = document.querySelectorAll('input[name="color"]');
+            let selectedValue;
+            for (var radio of radios) {
+                if (radio.checked) {
+                    selectedValue = radio.value;
+                    console.log(selectedValue);
+                }
+            }
+            if (selectedValue == "blue") {
+                document.querySelector("#purple-div").style.display = 'none';
+                document.querySelector("#blue-div").style.display = 'block';
+            } else if (selectedValue == "purple") {
+                document.querySelector("#blue-div").style.display = 'none';
+                document.querySelector("#purple-div").style.display = 'block';
+            }
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            var x = document.querySelector("#blue-div").querySelectorAll('img');
+            x.forEach(function(item) {
+                item.addEventListener('click', function() {
+                    document.querySelector('#bigimg1').src = item.src;
+                });
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var x = document.querySelector("#purple-div").querySelectorAll('img');
+            x.forEach(function(item) {
+                item.addEventListener('click', function() {
+                    document.querySelector('#bigimg2').src = item.src;
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1> Iphone 12</h1>
+    <input type="radio" name="color" value="blue" id="blue" onclick="display() ">
+    <label for="color">Blue</label>
+    <input type="radio" name="color" value="purple" id="purple" onclick="display()">
+    <label for="color"> Purple </label>
+
+    <div id="blue-div" style="display: none;">
+        </p>
+        <img src="blue1.jpg" width='100'>
+        <img src="blue2.jpg" width='100'>
+        <img src="blue3.png" width='100'>
+        <br>
+        <img src="blue1.jpg" width='300' id='bigimg1'>
+    </div>
+
+    <div id="purple-div" style="display: none;">
+        </p>
+        <img src="purple1.png" width='100'>
+        <img src="purple2.png" width='100'>
+        <img src="purple3.jpg" width='100'>
+        <br>
+        <img src="purple3.jpg" width='300' id='bigimg2'>
+    </div>
+</body>
+
+</html>

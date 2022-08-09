@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector("#on").addEventListener('click', function() {
+                document.querySelector("#myImage").src = "bulbon.gif";
+            });
+
+            document.querySelector("#off").addEventListener('click', function() {
+                document.querySelector("#myImage").src = "bulboff.gif";
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button id="on">Turn on the light</button>
+
+    <img id="myImage" src="bulboff.gif" style="width:100px">
+
+    <button id="off">Turn off the light</button>
+</body>
+
+</html>

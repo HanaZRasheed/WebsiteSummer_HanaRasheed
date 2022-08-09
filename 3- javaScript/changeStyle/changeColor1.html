@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction() {
+            var x = document.getElementsByTagName("p");
+            x[0].style.backgroundColor = "red";
+            x[1].style.backgroundColor = "blue";
+            x[2].style.backgroundColor = "yellow";
+        }
+    </script>
+</head>
+
+<body>
+    <p>This is a p element.</p>
+
+    <p>This is also a p element.</p>
+
+    <p>Click the button to add a background color to the first p element (index 0) in the document.</p>
+
+    <button onclick="myFunction()">Change Color</button>
+
+
+
+</body>
+
+</html>

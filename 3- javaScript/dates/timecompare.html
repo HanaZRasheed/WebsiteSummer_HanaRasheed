@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>A demonstration of how to access a Time field</h3>
+
+<input type="time" id="startTime">
+<input type="time" id="endTime">
+
+<p>Click the button to get the time of the time field.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var strStartTime = document.getElementById("startTime").value;
+    var strEndTime = document.getElementById("endTime").value;
+
+    var startTime = new Date().setHours(GetHours(strStartTime), GetMinutes(strStartTime), 0);
+    var endTime = new Date(startTime)
+    endTime = endTime.setHours(GetHours(strEndTime), GetMinutes(strEndTime), 0);
+    if (startTime > endTime) {
+        alert("Start Time is greater than end time");
+    }
+    if (startTime == endTime) {
+        alert("Start Time equals end time");
+    }
+    if (startTime < endTime) {
+        alert("Start Time is less than end time");
+    }
+}
+function GetHours(d) {
+    var h = parseInt(d.split(':')[0]);
+    if (d.split(':')[1].split(' ')[1] == "PM") {
+        h = h + 12;
+    }
+    return h;
+}
+function GetMinutes(d) {
+    return parseInt(d.split(':')[1].split(' ')[0]);
+}
+</script>
+
+</body>
+</html>

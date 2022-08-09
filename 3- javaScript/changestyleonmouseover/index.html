@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeStyle() {
+            document.querySelector("#demo").style.color = "red";
+        }
+
+        function reset() {
+            document.querySelector("#demo").style.color = "black";
+        }
+    </script>
+</head>
+
+<body>
+    <p id="demo" onmouseover=changeStyle()>JavaScript can change HTML style.</p>
+    <button type="button" onclick="reset()">Reset</button>
+</body>
+
+</html>

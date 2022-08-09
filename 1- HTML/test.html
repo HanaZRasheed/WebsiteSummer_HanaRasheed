@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Opacity Using RGBA Colors</title>
+    <style>
+        body {
+            background-image: url("images/pattern.jpg");
+        }
+        
+        .parent {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.1);
+            color: #fff;
+            font: 18px Arial, sans-serif;
+        }
+        
+        .child {
+            background-color: rgb(58, 0, 128);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child"> Item 1 </div>
+        <p>Setting background transparency without affecting the text content.</p>
+    </div>
+</body>
+
+</html>
