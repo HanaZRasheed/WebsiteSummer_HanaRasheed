@@ -6,18 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        function findFactorial() {
-            var fact = 1;
-            var x = document.getElementById("factorialInput").value;
-            for (var i = x; x > 1; x--) {
-                fact *= x;
-            }
-            document.getElementById("factorialResult").value = fact;
-
-
-        }
-    </script>
+    <script type="text/javascript" src="factorial.js"></script>
 </head>
 
 <body>
@@ -26,7 +15,7 @@
     <label> input </label>
     <input type="number" id="factorialInput">
     <label> output </label>
-    <input type="number" id="factorialResult">
+    <input type="number" id="factorialResult" readonly disabled>
     <input type="button" onClick="findFactorial()" value="Find Factorail">
 
 </body>

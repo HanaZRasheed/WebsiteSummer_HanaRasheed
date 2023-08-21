@@ -13,6 +13,14 @@
             x[1].style.backgroundColor = "blue";
             x[2].style.backgroundColor = "yellow";
         }
+
+        function reset() {
+            var x = document.getElementsByTagName("p");
+            x[0].style.backgroundColor = "white";
+            x[1].style.backgroundColor = "white";
+            x[2].style.backgroundColor = "white";
+
+        }
     </script>
 </head>
 
@@ -24,6 +32,7 @@
     <p>Click the button to add a background color to the first p element (index 0) in the document.</p>
 
     <button onclick="myFunction()">Change Color</button>
+    <button onclick="reset()">Reset Color</button>
 
 
 

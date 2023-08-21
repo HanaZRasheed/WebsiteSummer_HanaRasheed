@@ -27,7 +27,9 @@
         }
         
         .header {
-            grid-column: 1/-1;
+            /* grid-column: 1/-1; */
+            grid-column-start: 1;
+            grid-column-end: -1;
             background-color: #e9c46a;
         }
         
@@ -36,7 +38,8 @@
             grid-column-end: 2;
             background-color: #2a9d8f;
             /* grid-row-start: 2;
-            grid-row-end: 8; */
+            grid-row-end: 10; */
+            /* grid-row: 2/10; */
             grid-row: span 8;
         }
         
